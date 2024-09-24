@@ -49,3 +49,4 @@ jobs:
         git add README.md
         
         git diff-index --quiet HEAD || (git commit -am "Updated results summary" && git push origin)
+        python3 process_results_table.py
