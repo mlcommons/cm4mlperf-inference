@@ -1,0 +1,7 @@
+{
+  "starting_weights_filename": "https://github.com/mlcommons/cm4mlops/blob/main/script/get-ml-model-stable-diffusion/_cm.json#L174",
+  "retraining": "no",
+  "input_data_types": "int32",
+  "weight_data_types": "int8",
+  "weight_transformations": "quantization, affine fusion"
+}
