@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - mlperf-inference-results-scc24
-      - main
       - docs
 
 jobs:
