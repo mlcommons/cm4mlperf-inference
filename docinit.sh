@@ -19,9 +19,9 @@ repo_name=${INFERENCE_RESULTS_REPO_NAME:-inference_results_${INFERENCE_RESULTS_V
 if [ ! -e docs/javascripts/config.js ]; then
     if [ -n "${INFERENCE_RESULTS_VERSION}" ]; then
          echo "const results_version=\"${INFERENCE_RESULTS_VERSION}\";" > docs/javascripts/config.js;
-         echo "const repo_owner=\"${repo_owner}\";" >> docs/javascripts/config.js;
-         echo "const repo_branch=\"${repo_branch}\";" >> docs/javascripts/config.js;
-         echo "const repo_name=\"${repo_name}\";" >> docs/javascripts/config.js;
+         echo "var repo_owner=\"${repo_owner}\";" >> docs/javascripts/config.js;
+         echo "var repo_branch=\"${repo_branch}\";" >> docs/javascripts/config.js;
+         echo "var repo_name=\"${repo_name}\";" >> docs/javascripts/config.js;
          ver_num=`echo ${INFERENCE_RESULTS_VERSION} | tr -cd '0-9'`
          echo "const dbVersion =\"${ver_num}\";" >> docs/javascripts/config.js;
     else
