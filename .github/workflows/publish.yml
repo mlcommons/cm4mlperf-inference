@@ -1,0 +1,31 @@
+name: Publish visualization site
+
+
+on:
+  release:
+    types: [published]
+  push:
+    branches:
+      - mlperf-inference-results-scc24
+      - docs
+
+jobs:
+
+  publish:
+    name: Publish the site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository normally
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Init docs site
+        run: bash run.sh
+
+      - name: Run Mkdocs deploy
+        run: mkdocs gh-deploy --force
