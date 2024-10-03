@@ -34,6 +34,36 @@
         "Availability":"available",
         "Division":"open",
         "SystemType":"datacenter",
+        "SystemName":"e8dbfdd7ca14",
+        "Platform":"e8dbfdd7ca14-nvidia-gpu-TensorRT-scc24-base",
+        "Model":"stable-diffusion-xl",
+        "MlperfModel":"stable-diffusion-xl",
+        "Scenario":"Offline",
+        "Result":1.14217,
+        "Accuracy":"CLIP_SCORE: 15.617164582014084  FID_SCORE: 233.2857378703032",
+        "number_of_nodes":1,
+        "host_processor_model_name":"Intel(R) Xeon(R) w7-2495X",
+        "host_processors_per_node":1,
+        "host_processor_core_count":24,
+        "accelerator_model_name":"NVIDIA GeForce RTX 4090",
+        "accelerators_per_node":1,
+        "Location":"open\/MLCommons\/results\/e8dbfdd7ca14-nvidia-gpu-TensorRT-scc24-base\/stable-diffusion-xl\/offline",
+        "framework":"TensorRT",
+        "operating_system":"Ubuntu 20.04 (linux-6.2.0-39-generic-glibc2.31)",
+        "notes":"Automated by MLCommons CM v2.3.9. ",
+        "compliance":1,
+        "errors":0,
+        "version":"v4.1",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"int8"
+    },
+    "2":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"datacenter",
         "SystemName":"48ed6105bd85",
         "Platform":"48ed6105bd85-nvidia-gpu-TensorRT-scc24-base",
         "Model":"stable-diffusion-xl",
@@ -59,7 +89,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"int8"
     },
-    "2":{
+    "3":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -89,7 +119,7 @@
         "Units":"Tokens\/s",
         "weight_data_types":"fp32"
     },
-    "3":{
+    "4":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -119,7 +149,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "4":{
+    "5":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -149,7 +179,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "5":{
+    "6":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
@@ -179,7 +209,7 @@
         "Units":"Samples\/s",
         "weight_data_types":"fp32"
     },
-    "6":{
+    "7":{
         "Organization":"MLCommons",
         "Availability":"available",
         "Division":"open",
