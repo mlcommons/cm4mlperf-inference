@@ -1,5 +1,5 @@
 site_name: MLPerf Inference Results Comparison
-repo_url: https://github.com/mlcommons/inference_results_v4.0
+repo_url: https://github.com/mlcommons/cm4mlperf-inference
 theme:
   name: material
   logo: img/logo_v2.svg
