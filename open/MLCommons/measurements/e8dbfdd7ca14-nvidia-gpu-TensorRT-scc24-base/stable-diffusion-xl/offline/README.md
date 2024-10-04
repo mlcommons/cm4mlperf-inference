@@ -93,4 +93,4 @@ Model Precision: int8
 `FID_SCORE`: `233.28574`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `1.14217`
+`Samples per second`: `1.14058`
