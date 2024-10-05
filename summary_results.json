@@ -154,7 +154,7 @@
     "UsedModel": "stable-diffusion-xl",
     "Model": "stable-diffusion-xl",
     "Scenario": "Offline",
-    "Accuracy": "CLIP_SCORE: 15.617164582014084  FID_SCORE: 233.28573767510915",
+    "Accuracy": "CLIP_SCORE: 15.617164582014084  FID_SCORE: 233.28573789198563",
     "Nodes": 1,
     "Processor": "Intel(R) Xeon(R) w7-2495X",
     "host_processors_per_node": 1,
@@ -176,7 +176,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/e8dbfdd7ca14-nvidia-gpu-TensorRT-scc24-base/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.14058,
+    "Performance_Result": 1.13989,
     "Performance_Units": "Samples/s"
   },
   {
