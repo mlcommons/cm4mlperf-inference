@@ -32,7 +32,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/3b07702db56d-reference-gpu-pytorch_v2.4.1-scc24-base/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 0.374837,
+    "Performance_Result": 0.375843,
     "Performance_Units": "Samples/s"
   },
   {
