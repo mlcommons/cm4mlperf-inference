@@ -176,7 +176,7 @@
     "Code": "https://github.com/mlcommons/https://github.com/mlcommons/submissions_inference_results_v4.1/tree/main/open/MLCommons/code",
     "Unique ID (e.g. for Audit)": "datacenter/open/MLCommons/e8dbfdd7ca14-nvidia-gpu-TensorRT-scc24-base/stable-diffusion-xl",
     "ColorKey": "availableMLCommons",
-    "Performance_Result": 1.13989,
+    "Performance_Result": 1.13521,
     "Performance_Units": "Samples/s"
   },
   {
