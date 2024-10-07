@@ -35,7 +35,7 @@ jobs:
         cmr "convert from-csv to-md" --csv_file=summary.csv --md_file=README.md
 
         USER="GitHub Action"
-        EMAIL=action@github.com
+        EMAIL=admin@gateoverflow.com
 
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
