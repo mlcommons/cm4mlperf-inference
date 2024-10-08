@@ -41,8 +41,7 @@ jobs:
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
         #git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN_TOKEN }}@github.com/${{ github.repository }}
-        git add summary*
-        echo -e 'Please download [summary.xlsx](summary.xlsx) to view the most recent results. \n ```' > temp
+        git add summary_results.json
         tail -n 16 checker_log.txt >> temp
         echo -e '\n```\n' >> temp
         cat temp | cat - README.md > temp1
