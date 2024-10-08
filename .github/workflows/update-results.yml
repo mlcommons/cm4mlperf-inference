@@ -41,11 +41,11 @@ jobs:
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
         #git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN_TOKEN }}@github.com/${{ github.repository }}
-        git add summary_results.json
+        git add -f summary_results.json
         tail -n 16 checker_log.txt >> temp
         echo -e '\n```\n' >> temp
         cat temp | cat - README.md > temp1
         head -n 100 temp1 > README.md
-        git add README.md
+        git add -f README.md
         
         git diff-index --quiet HEAD || (git commit -am "Updated results summary" && git push origin)
