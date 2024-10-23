@@ -1,0 +1,23 @@
+# CPU run command
+cm run script --tags=run-mlperf,inference,_r4.1-dev,_short \
+   --model=bert-99 \
+   --implementation=reference \
+   --framework=pytorch \
+   --category=edge \
+   --scenario=Offline \
+   --execution_mode=valid \
+   --device=cpu \
+   --quiet  \
+    --test_query_count=100
+
+# GPU run command
+cm run script --tags=run-mlperf,inference,_r4.1-dev,_short \
+   --model=bert-99 \
+   --implementation=reference \
+   --framework=pytorch \
+   --category=edge \
+   --scenario=Offline \
+   --execution_mode=valid \
+   --device=cuda \
+   --quiet  \
+    --test_query_count=500
