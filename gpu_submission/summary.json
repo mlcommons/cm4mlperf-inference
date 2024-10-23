@@ -1,0 +1,32 @@
+{
+    "0":{
+        "Organization":"MLCommons",
+        "Availability":"available",
+        "Division":"open",
+        "SystemType":"edge",
+        "SystemName":"scc124_gpu0.novalocal",
+        "Platform":"scc124_gpu0.novalocal-reference-gpu-pytorch-default_config",
+        "Model":"bert-99",
+        "MlperfModel":"bert-99",
+        "Scenario":"Offline",
+        "Result":48.3116,
+        "Accuracy":"F1: 90.87487229720105",
+        "number_of_nodes":1,
+        "host_processor_model_name":"AMD EPYC-Milan Processor",
+        "host_processors_per_node":16,
+        "host_processor_core_count":1,
+        "accelerator_model_name":"GRID A100X-20C",
+        "accelerators_per_node":1,
+        "Location":"open\/MLCommons\/results\/scc124_gpu0.novalocal-reference-gpu-pytorch-default_config\/bert-99\/offline",
+        "framework":"pytorch",
+        "operating_system":"Rocky 9.4 (linux-6.1.110-1.el9.elrepo.x86_64-glibc2.34)",
+        "notes":"Automated by MLCommons CM v3.2.6. ",
+        "compliance":1,
+        "errors":0,
+        "version":"v4.1",
+        "inferred":0,
+        "has_power":false,
+        "Units":"Samples\/s",
+        "weight_data_types":"fp32"
+    }
+}
