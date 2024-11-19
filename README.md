@@ -1,19 +1,19 @@
 ```
-[2024-11-19 08:38:02,327 submission_checker1.py:3109 INFO] Results=11, NoResults=0, Power Results=0
-[2024-11-19 08:38:02,327 submission_checker1.py:3116 INFO] ---
-[2024-11-19 08:38:02,327 submission_checker1.py:3117 INFO] Closed Results=0, Closed Power Results=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3109 INFO] Results=11, NoResults=0, Power Results=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3116 INFO] ---
+[2024-11-19 11:36:36,111 submission_checker1.py:3117 INFO] Closed Results=0, Closed Power Results=0
 
-[2024-11-19 08:38:02,327 submission_checker1.py:3122 INFO] Open Results=11, Open Power Results=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3122 INFO] Open Results=11, Open Power Results=0
 
-[2024-11-19 08:38:02,327 submission_checker1.py:3127 INFO] Network Results=0, Network Power Results=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3127 INFO] Network Results=0, Network Power Results=0
 
-[2024-11-19 08:38:02,327 submission_checker1.py:3132 INFO] ---
-[2024-11-19 08:38:02,327 submission_checker1.py:3134 INFO] Systems=11, Power Systems=0
-[2024-11-19 08:38:02,327 submission_checker1.py:3138 INFO] Closed Systems=0, Closed Power Systems=0
-[2024-11-19 08:38:02,327 submission_checker1.py:3143 INFO] Open Systems=11, Open Power Systems=0
-[2024-11-19 08:38:02,327 submission_checker1.py:3148 INFO] Network Systems=0, Network Power Systems=0
-[2024-11-19 08:38:02,327 submission_checker1.py:3153 INFO] ---
-[2024-11-19 08:38:02,327 submission_checker1.py:3158 INFO] SUMMARY: submission looks OK
+[2024-11-19 11:36:36,111 submission_checker1.py:3132 INFO] ---
+[2024-11-19 11:36:36,111 submission_checker1.py:3134 INFO] Systems=11, Power Systems=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3138 INFO] Closed Systems=0, Closed Power Systems=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3143 INFO] Open Systems=11, Open Power Systems=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3148 INFO] Network Systems=0, Network Power Systems=0
+[2024-11-19 11:36:36,111 submission_checker1.py:3153 INFO] ---
+[2024-11-19 11:36:36,111 submission_checker1.py:3158 INFO] SUMMARY: submission looks OK
 INFO:root:       ! call "postprocess" from /home/runner/CM/repos/mlcommons@cm4mlops/script/run-mlperf-inference-submission-checker/customize.py
 
 ```
