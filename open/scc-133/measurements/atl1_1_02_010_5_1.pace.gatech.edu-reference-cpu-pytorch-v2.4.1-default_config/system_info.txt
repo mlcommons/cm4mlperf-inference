@@ -1,0 +1,1475 @@
+Platform Details
+
+------------------------------------------------------------
+1. uname -a
+Linux atl1-1-02-010-5-1.pace.gatech.edu 5.14.0-427.26.1.el9_4.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Jul 5 11:34:54 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux
+------------------------------------------------------------
+2. w
+ 00:18:05 up 47 days, 11:39,  0 users,  load average: 16.03, 17.79, 18.43
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+------------------------------------------------------------
+3. Username
+avivekanand3
+------------------------------------------------------------
+4. ulimit -a
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 765913
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 100663296
+open files                      (-n) 131072
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 765913
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+------------------------------------------------------------
+5. sysinfo process ancestry
+systemd-+-NetworkManager---2*[{NetworkManager}]
+        |-acc---29*[{acc}]
+        |-accounts-daemon---2*[{accounts-daemon}]
+        |-agentid-service---16*[{agentid-service}]
+        |-agetty
+        |-atd
+        |-auditd-+-sedispatch
+        |        `-2*[{auditd}]
+        |-automount---6*[{automount}]
+        |-avahi-daemon---avahi-daemon
+        |-crond
+        |-cupsd
+        |-dbus-broker-lau---dbus-broker
+        |-gssproxy---5*[{gssproxy}]
+        |-irqbalance---{irqbalance}
+        |-master-+-cleanup
+        |        |-local
+        |        |-pickup
+        |        |-qmgr
+        |        |-smtp
+        |        `-trivial-rewrite
+        |-mcelog
+        |-munged---11*[{munged}]
+        |-node_exporter---50*[{node_exporter}]
+        |-ntpd
+        |-pmd-+-clad---12*[{clad}]
+        |     |-dypdng---4*[{dypdng}]
+        |     |-lted---4*[lted]
+        |     |-pyxd---3*[{pyxd}]
+        |     |-spmd---2*[{spmd}]
+        |     `-100*[{pmd}]
+        |-polkitd---11*[{polkitd}]
+        |-python3.10---/opt/saltstack/---5*[{/opt/saltstack/}]
+        |-qualys-cep---7*[{qualys-cep}]
+        |-qualys-cloud-ag---7*[{qualys-cloud-ag}]
+        |-rdma-ndd
+        |-rhsmcertd---{rhsmcertd}
+        |-rpc.statd
+        |-rpcbind
+        |-rshim---{rshim}
+        |-rsyslogd---5*[{rsyslogd}]
+        |-slurmd
+        |-slurmstepd
+        |-slurmstepd-+-sleep
+        |            `-3*[{slurmstepd}]
+        |-slurmstepd-+-bash---tmux: client
+        |            `-5*[{slurmstepd}]
+        |-smartd
+        |-sshd
+        |-sssd-+-sssd_be
+        |      |-sssd_nss
+        |      `-sssd_pam
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-udevd
+        |-tmux: server---bash---cm---bash---pstree
+        |-tuned---3*[{tuned}]
+        |-udisksd---4*[{udisksd}]
+        `-upowerd---2*[{upowerd}]
+------------------------------------------------------------
+6. /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2699.893
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 1
+cpu cores	: 12
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 2
+cpu cores	: 12
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 3
+cpu cores	: 12
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 4
+cpu cores	: 12
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 5
+cpu cores	: 12
+apicid		: 10
+initial apicid	: 10
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 6
+cpu cores	: 12
+apicid		: 12
+initial apicid	: 12
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 9
+cpu cores	: 12
+apicid		: 18
+initial apicid	: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 10
+cpu cores	: 12
+apicid		: 20
+initial apicid	: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 11
+cpu cores	: 12
+apicid		: 22
+initial apicid	: 22
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 12
+cpu cores	: 12
+apicid		: 24
+initial apicid	: 24
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 13
+cpu cores	: 12
+apicid		: 26
+initial apicid	: 26
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 0
+cpu cores	: 12
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 2
+cpu cores	: 12
+apicid		: 36
+initial apicid	: 36
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 3
+cpu cores	: 12
+apicid		: 38
+initial apicid	: 38
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 4
+cpu cores	: 12
+apicid		: 40
+initial apicid	: 40
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 16
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 5
+cpu cores	: 12
+apicid		: 42
+initial apicid	: 42
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 17
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 6
+cpu cores	: 12
+apicid		: 44
+initial apicid	: 44
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 18
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 8
+cpu cores	: 12
+apicid		: 48
+initial apicid	: 48
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 19
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 9
+cpu cores	: 12
+apicid		: 50
+initial apicid	: 50
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 20
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 10
+cpu cores	: 12
+apicid		: 52
+initial apicid	: 52
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 21
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 11
+cpu cores	: 12
+apicid		: 54
+initial apicid	: 54
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 22
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 12
+cpu cores	: 12
+apicid		: 56
+initial apicid	: 56
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 23
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+stepping	: 7
+microcode	: 0x5003604
+cpu MHz		: 2700.000
+cache size	: 19712 KB
+physical id	: 1
+siblings	: 12
+core id		: 13
+cpu cores	: 12
+apicid		: 58
+initial apicid	: 58
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_mode_based_exec tsc_scaling
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs taa itlb_multihit mmio_stale_data retbleed eibrs_pbrsb gds
+bogomips	: 5400.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+------------------------------------------------------------
+7. lscpu
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Address sizes:                      46 bits physical, 48 bits virtual
+Byte Order:                         Little Endian
+CPU(s):                             24
+On-line CPU(s) list:                0-23
+Vendor ID:                          GenuineIntel
+Model name:                         Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz
+CPU family:                         6
+Model:                              85
+Thread(s) per core:                 1
+Core(s) per socket:                 12
+Socket(s):                          2
+Stepping:                           7
+CPU(s) scaling MHz:                 73%
+CPU max MHz:                        3700.0000
+CPU min MHz:                        1200.0000
+BogoMIPS:                           5400.00
+Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req vnmi pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+Virtualization:                     VT-x
+L1d cache:                          768 KiB (24 instances)
+L1i cache:                          768 KiB (24 instances)
+L2 cache:                           24 MiB (24 instances)
+L3 cache:                           38.5 MiB (2 instances)
+NUMA node(s):                       2
+NUMA node0 CPU(s):                  0-11
+NUMA node1 CPU(s):                  12-23
+Vulnerability Gather data sampling: Vulnerable
+Vulnerability Itlb multihit:        KVM: Mitigation: VMX disabled
+Vulnerability L1tf:                 Not affected
+Vulnerability Mds:                  Not affected
+Vulnerability Meltdown:             Not affected
+Vulnerability Mmio stale data:      Vulnerable
+Vulnerability Retbleed:             Vulnerable
+Vulnerability Spec rstack overflow: Not affected
+Vulnerability Spec store bypass:    Vulnerable
+Vulnerability Spectre v1:           Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:           Vulnerable, IBPB: disabled, STIBP: disabled, PBRSB-eIBRS: Vulnerable
+Vulnerability Srbds:                Not affected
+Vulnerability Tsx async abort:      Mitigation; TSX disabled
+------------------------------------------------------------
+8. numactl --hardware
+Requires SUDO permission
+------------------------------------------------------------
+9. /proc/meminfo
+MemTotal:       196141724 kB
+MemFree:        131374300 kB
+MemAvailable:   191729280 kB
+Buffers:            8292 kB
+Cached:         60856356 kB
+SwapCached:        15360 kB
+Active:          5111724 kB
+Inactive:       56582212 kB
+Active(anon):     959440 kB
+Inactive(anon):    15176 kB
+Active(file):    4152284 kB
+Inactive(file): 56567036 kB
+Unevictable:       36592 kB
+Mlocked:           33520 kB
+SwapTotal:       8388604 kB
+SwapFree:        8287996 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:                12 kB
+Writeback:             4 kB
+AnonPages:        849116 kB
+Mapped:           446980 kB
+Shmem:            138428 kB
+KReclaimable:    1215844 kB
+Slab:            1773156 kB
+SReclaimable:    1215844 kB
+SUnreclaim:       557312 kB
+KernelStack:       13680 kB
+PageTables:        12972 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    106459464 kB
+Committed_AS:    2565392 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      340804 kB
+VmallocChunk:          0 kB
+Percpu:            54784 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    215040 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      758008 kB
+DirectMap2M:    39772160 kB
+DirectMap1G:    161480704 kB
+------------------------------------------------------------
+10. who -r
+         run-level 3  2024-10-02 13:38
+------------------------------------------------------------
+11. Systemd service manager version
+systemd 252 (252-32.el9_4.6)
+------------------------------------------------------------
+12. Services, from systemctl list-unit-files
+UNIT FILE                                                                 STATE           PRESET
+proc-sys-fs-binfmt_misc.automount                                         static          -
+-.mount                                                                   generated       -
+boot-efi.mount                                                            generated       -
+boot.mount                                                                generated       -
+dev-hugepages.mount                                                       static          -
+dev-mqueue.mount                                                          static          -
+proc-fs-nfsd.mount                                                        static          -
+proc-sys-fs-binfmt_misc.mount                                             disabled        disabled
+scratch.mount                                                             generated       -
+storage-home-hcodaman1.mount                                              generated       -
+storage-home-hice1.mount                                                  generated       -
+storage-ice\x2dshared.mount                                               generated       -
+storage-pace\x2dapps.mount                                                generated       -
+storage-utilities.mount                                                   generated       -
+sys-fs-fuse-connections.mount                                             static          -
+sys-kernel-config.mount                                                   static          -
+sys-kernel-debug.mount                                                    static          -
+sys-kernel-tracing.mount                                                  static          -
+tmp.mount                                                                 generated       -
+var-lib-nfs-rpc_pipefs.mount                                              static          -
+var.mount                                                                 generated       -
+cups.path                                                                 enabled         enabled
+insights-client-results.path                                              disabled        disabled
+ostree-finalize-staged.path                                               disabled        disabled
+systemd-ask-password-console.path                                         static          -
+systemd-ask-password-plymouth.path                                        static          -
+systemd-ask-password-wall.path                                            static          -
+slurmstepd.scope                                                          transient       -
+acc.service                                                               enabled         disabled
+accounts-daemon.service                                                   enabled         enabled
+anaconda-direct.service                                                   static          -
+anaconda-fips.service                                                     static          -
+anaconda-nm-config.service                                                static          -
+anaconda-nm-disable-autocons.service                                      static          -
+anaconda-noshell.service                                                  static          -
+anaconda-pre.service                                                      static          -
+anaconda-shell@.service                                                   static          -
+anaconda-sshd.service                                                     static          -
+anaconda-tmux@.service                                                    static          -
+anaconda.service                                                          static          -
+arp-ethers.service                                                        disabled        disabled
+atd.service                                                               enabled         enabled
+auditd.service                                                            enabled         enabled
+auth-rpcgss-module.service                                                static          -
+autofs.service                                                            enabled         disabled
+autovt@.service                                                           alias           -
+avahi-daemon.service                                                      enabled         enabled
+blivet.service                                                            static          -
+blk-availability.service                                                  disabled        disabled
+bluetooth.service                                                         enabled         enabled
+bolt.service                                                              static          -
+canberra-system-bootup.service                                            disabled        disabled
+canberra-system-shutdown-reboot.service                                   disabled        disabled
+canberra-system-shutdown.service                                          disabled        disabled
+chrony-wait.service                                                       disabled        disabled
+chronyd-restricted.service                                                disabled        disabled
+chronyd.service                                                           enabled         enabled
+cockpit-motd.service                                                      static          -
+cockpit-wsinstance-http.service                                           static          -
+cockpit-wsinstance-https-factory@.service                                 static          -
+cockpit-wsinstance-https@.service                                         static          -
+cockpit.service                                                           static          -
+colord.service                                                            static          -
+configure-printer@.service                                                static          -
+console-getty.service                                                     disabled        disabled
+container-getty@.service                                                  static          -
+cpupower.service                                                          disabled        disabled
+crond.service                                                             enabled         enabled
+cups-browsed.service                                                      disabled        disabled
+cups.service                                                              enabled         enabled
+dbus-broker.service                                                       enabled         enabled
+dbus-daemon.service                                                       disabled        disabled
+dbus-org.bluez.service                                                    alias           -
+dbus-org.freedesktop.Avahi.service                                        alias           -
+dbus-org.freedesktop.hostname1.service                                    alias           -
+dbus-org.freedesktop.locale1.service                                      alias           -
+dbus-org.freedesktop.login1.service                                       alias           -
+dbus-org.freedesktop.nm-dispatcher.service                                alias           -
+dbus-org.freedesktop.timedate1.service                                    alias           -
+dbus.service                                                              alias           -
+debug-shell.service                                                       disabled        disabled
+display-manager.service                                                   alias           -
+dm-event.service                                                          static          -
+dnf-makecache.service                                                     static          -
+dnf-system-upgrade-cleanup.service                                        static          -
+dnf-system-upgrade.service                                                disabled        disabled
+dracut-cmdline.service                                                    static          -
+dracut-initqueue.service                                                  static          -
+dracut-mount.service                                                      static          -
+dracut-pre-mount.service                                                  static          -
+dracut-pre-pivot.service                                                  static          -
+dracut-pre-trigger.service                                                static          -
+dracut-pre-udev.service                                                   static          -
+dracut-shutdown-onfailure.service                                         static          -
+dracut-shutdown.service                                                   static          -
+emergency.service                                                         static          -
+firewalld.service                                                         disabled        enabled
+flatpak-system-helper.service                                             static          -
+fprintd.service                                                           static          -
+fstrim.service                                                            static          -
+fwupd-offline-update.service                                              static          -
+fwupd-refresh.service                                                     static          -
+fwupd.service                                                             static          -
+gdm.service                                                               enabled         enabled
+geoclue.service                                                           static          -
+getty@.service                                                            enabled         enabled
+grub-boot-indeterminate.service                                           static          -
+grub2-systemd-integration.service                                         static          -
+gssproxy.service                                                          disabled        disabled
+hwloc-dump-hwdata.service                                                 disabled        disabled
+ibacm.service                                                             disabled        disabled
+iio-sensor-proxy.service                                                  static          -
+initial-setup-reconfiguration.service                                     disabled        enabled
+initial-setup.service                                                     disabled        disabled
+initrd-cleanup.service                                                    static          -
+initrd-parse-etc.service                                                  static          -
+initrd-switch-root.service                                                static          -
+initrd-udevadm-cleanup-db.service                                         static          -
+insights-client-boot.service                                              enabled         enabled
+insights-client-results.service                                           static          -
+insights-client.service                                                   static          -
+instperf.service                                                          static          -
+instsvcdrv.service                                                        enabled         disabled
+iprdump.service                                                           disabled        disabled
+iprinit.service                                                           disabled        disabled
+iprupdate.service                                                         disabled        disabled
+irqbalance.service                                                        enabled         enabled
+iscsi-init.service                                                        disabled        disabled
+iscsi-onboot.service                                                      enabled         enabled
+iscsi-shutdown.service                                                    static          -
+iscsi-starter.service                                                     enabled         disabled
+iscsi.service                                                             enabled         enabled
+iscsid.service                                                            disabled        disabled
+iscsiuio.service                                                          disabled        disabled
+kdump.service                                                             enabled         enabled
+key_saverestore.service                                                   enabled         disabled
+kmod-static-nodes.service                                                 static          -
+kpatch.service                                                            disabled        disabled
+kvm_stat.service                                                          disabled        disabled
+ldconfig.service                                                          static          -
+ledmon.service                                                            disabled        disabled
+lnet.service                                                              disabled        disabled
+logrotate.service                                                         static          -
+low-memory-monitor.service                                                enabled         enabled
+lsvcgss.service                                                           disabled        disabled
+lustre-mount.service                                                      enabled         disabled
+lustre.service                                                            enabled         disabled
+lvm2-lvmpolld.service                                                     static          -
+lvm2-monitor.service                                                      enabled         enabled
+man-db-cache-update.service                                               static          -
+man-db-restart-cache-update.service                                       disabled        disabled
+mariadb.service                                                           disabled        disabled
+mariadb@.service                                                          disabled        disabled
+mcelog.service                                                            enabled         enabled
+mdadm-grow-continue@.service                                              static          -
+mdadm-last-resort@.service                                                static          -
+mdcheck_continue.service                                                  static          -
+mdcheck_start.service                                                     static          -
+mdmon@.service                                                            static          -
+mdmonitor-oneshot.service                                                 static          -
+mdmonitor.service                                                         enabled         enabled
+microcode.service                                                         enabled         enabled
+mlnx_interface_mgr@.service                                               static          -
+modprobe@.service                                                         static          -
+mst.service                                                               generated       -
+multipathd.service                                                        enabled         enabled
+munge.service                                                             enabled         disabled
+ndctl-monitor.service                                                     disabled        disabled
+netavark-dhcp-proxy.service                                               disabled        disabled
+netavark-firewalld-reload.service                                         disabled        disabled
+NetworkManager-dispatcher.service                                         enabled         enabled
+NetworkManager-wait-online.service                                        enabled         disabled
+NetworkManager.service                                                    enabled         enabled
+nfs-blkmap.service                                                        disabled        disabled
+nfs-idmapd.service                                                        static          -
+nfs-mountd.service                                                        static          -
+nfs-server.service                                                        disabled        disabled
+nfs-utils.service                                                         static          -
+nfsdcld.service                                                           static          -
+nftables.service                                                          disabled        disabled
+nis-domainname.service                                                    enabled         enabled
+nm-priv-helper.service                                                    static          -
+node_exporter.service                                                     enabled         disabled
+nrpe.service                                                              disabled        disabled
+nrpe@.service                                                             static          -
+ntp-wait.service                                                          disabled        disabled
+ntpd.service                                                              enabled         disabled
+ntplogtemp.service                                                        static          -
+ntpviz-daily.service                                                      static          -
+ntpviz-weekly.service                                                     static          -
+nvmefc-boot-connections.service                                           enabled         enabled
+nvmf-autoconnect.service                                                  disabled        disabled
+nvmf-connect@.service                                                     static          -
+openibd.service                                                           enabled         disabled
+opensmd.service                                                           disabled        disabled
+opensmd@.service                                                          disabled        disabled
+ostree-boot-complete.service                                              static          -
+ostree-finalize-staged-hold.service                                       static          -
+ostree-finalize-staged.service                                            static          -
+ostree-prepare-root.service                                               static          -
+ostree-readonly-sysroot-migration.service                                 disabled        disabled
+ostree-remount.service                                                    enabled         enabled
+ostree-state-overlay@.service                                             disabled        disabled
+packagekit-offline-update.service                                         static          -
+packagekit.service                                                        static          -
+pam_namespace.service                                                     static          -
+pesign.service                                                            disabled        disabled
+plymouth-halt.service                                                     static          -
+plymouth-kexec.service                                                    static          -
+plymouth-poweroff.service                                                 static          -
+plymouth-quit-wait.service                                                static          -
+plymouth-quit.service                                                     static          -
+plymouth-read-write.service                                               static          -
+plymouth-reboot.service                                                   static          -
+plymouth-start.service                                                    static          -
+plymouth-switch-root-initramfs.service                                    static          -
+plymouth-switch-root.service                                              static          -
+podman-auto-update.service                                                disabled        disabled
+podman-clean-transient.service                                            disabled        disabled
+podman-kube@.service                                                      disabled        disabled
+podman-restart.service                                                    disabled        disabled
+podman.service                                                            disabled        disabled
+polkit.service                                                            static          -
+postfix.service                                                           enabled         disabled
+power-profiles-daemon.service                                             enabled         enabled
+psacct.service                                                            disabled        disabled
+qualys-cloud-agent.service                                                enabled         disabled
+quotaon.service                                                           static          -
+raid-check.service                                                        static          -
+rc-local.service                                                          static          -
+rdisc.service                                                             disabled        disabled
+rdma-ndd.service                                                          static          -
+realmd.service                                                            static          -
+rescue.service                                                            static          -
+rhcd.service                                                              disabled        disabled
+rhsm-facts.service                                                        disabled        disabled
+rhsm.service                                                              disabled        disabled
+rhsmcertd.service                                                         enabled         enabled
+rpc-gssd.service                                                          static          -
+rpc-statd-notify.service                                                  static          -
+rpc-statd.service                                                         enabled-runtime disabled
+rpcbind.service                                                           enabled         enabled
+rpm-ostree-bootstatus.service                                             disabled        disabled
+rpm-ostree-countme.service                                                static          -
+rpm-ostree-fix-shadow-mode.service                                        disabled        disabled
+rpm-ostreed-automatic.service                                             static          -
+rpm-ostreed.service                                                       static          -
+rpmdb-rebuild.service                                                     disabled        disabled
+rshim.service                                                             enabled         disabled
+rsyslog.service                                                           enabled         enabled
+rtkit-daemon.service                                                      enabled         enabled
+salt-minion.service                                                       enabled         disabled
+salt-proxy@.service                                                       disabled        disabled
+salt-update.service                                                       disabled        disabled
+saslauthd.service                                                         disabled        disabled
+selinux-autorelabel-mark.service                                          enabled         enabled
+selinux-autorelabel.service                                               static          -
+selinux-check-proper-disable.service                                      disabled        disabled
+serial-getty@.service                                                     disabled        disabled
+setroubleshootd.service                                                   static          -
+slurmd.service                                                            enabled         disabled
+smartd.service                                                            enabled         enabled
+spice-vdagentd.service                                                    indirect        enabled
+srp_daemon.service                                                        disabled        disabled
+srp_daemon_port@.service                                                  disabled        disabled
+sshd-keygen@.service                                                      disabled        disabled
+sshd.service                                                              enabled         enabled
+sshd@.service                                                             static          -
+sssd-autofs.service                                                       indirect        disabled
+sssd-ifp.service                                                          static          -
+sssd-kcm.service                                                          indirect        disabled
+sssd-nss.service                                                          indirect        disabled
+sssd-pac.service                                                          indirect        disabled
+sssd-pam.service                                                          indirect        disabled
+sssd-ssh.service                                                          indirect        disabled
+sssd-sudo.service                                                         indirect        disabled
+sssd.service                                                              enabled         enabled
+switcheroo-control.service                                                enabled         enabled
+system-update-cleanup.service                                             static          -
+systemd-ask-password-console.service                                      static          -
+systemd-ask-password-plymouth.service                                     static          -
+systemd-ask-password-wall.service                                         static          -
+systemd-backlight@.service                                                static          -
+systemd-binfmt.service                                                    static          -
+systemd-bless-boot.service                                                static          -
+systemd-boot-check-no-failures.service                                    disabled        disabled
+systemd-boot-random-seed.service                                          static          -
+systemd-boot-update.service                                               enabled         enabled
+systemd-coredump@.service                                                 static          -
+systemd-exit.service                                                      static          -
+systemd-firstboot.service                                                 static          -
+systemd-fsck-root.service                                                 static          -
+systemd-fsck@.service                                                     static          -
+systemd-growfs-root.service                                               static          -
+systemd-growfs@.service                                                   static          -
+systemd-halt.service                                                      static          -
+systemd-hibernate-resume@.service                                         static          -
+systemd-hibernate.service                                                 static          -
+systemd-hostnamed.service                                                 static          -
+systemd-hwdb-update.service                                               static          -
+systemd-hybrid-sleep.service                                              static          -
+systemd-initctl.service                                                   static          -
+systemd-journal-catalog-update.service                                    static          -
+systemd-journal-flush.service                                             static          -
+systemd-journald.service                                                  static          -
+systemd-journald@.service                                                 static          -
+systemd-kexec.service                                                     static          -
+systemd-localed.service                                                   static          -
+systemd-logind.service                                                    static          -
+systemd-machine-id-commit.service                                         static          -
+systemd-modules-load.service                                              static          -
+systemd-network-generator.service                                         enabled         enabled
+systemd-pcrfs-root.service                                                static          -
+systemd-pcrfs@.service                                                    static          -
+systemd-pcrmachine.service                                                static          -
+systemd-pcrphase-initrd.service                                           static          -
+systemd-pcrphase-sysinit.service                                          static          -
+systemd-pcrphase.service                                                  static          -
+systemd-poweroff.service                                                  static          -
+systemd-pstore.service                                                    disabled        enabled
+systemd-quotacheck.service                                                static          -
+systemd-random-seed.service                                               static          -
+systemd-reboot.service                                                    static          -
+systemd-remount-fs.service                                                enabled-runtime disabled
+systemd-repart.service                                                    static          -
+systemd-rfkill.service                                                    static          -
+systemd-suspend-then-hibernate.service                                    static          -
+systemd-suspend.service                                                   static          -
+systemd-sysctl.service                                                    static          -
+systemd-sysext.service                                                    disabled        disabled
+systemd-sysupdate-reboot.service                                          indirect        disabled
+systemd-sysupdate.service                                                 indirect        disabled
+systemd-sysusers.service                                                  static          -
+systemd-timedated.service                                                 static          -
+systemd-tmpfiles-clean.service                                            static          -
+systemd-tmpfiles-setup-dev.service                                        static          -
+systemd-tmpfiles-setup.service                                            static          -
+systemd-udev-settle.service                                               static          -
+systemd-udev-trigger.service                                              static          -
+systemd-udevd.service                                                     static          -
+systemd-update-done.service                                               static          -
+systemd-update-utmp-runlevel.service                                      static          -
+systemd-update-utmp.service                                               static          -
+systemd-user-sessions.service                                             static          -
+systemd-vconsole-setup.service                                            static          -
+systemd-volatile-root.service                                             static          -
+teamd@.service                                                            static          -
+trace-cmd.service                                                         disabled        disabled
+traps_pmd.service                                                         enabled         disabled
+tuned.service                                                             enabled         enabled
+tvncserver.service                                                        generated       -
+udisks2.service                                                           enabled         enabled
+upower.service                                                            enabled         enabled
+user-runtime-dir@.service                                                 static          -
+user@.service                                                             static          -
+vncserver@.service                                                        disabled        disabled
+wpa_supplicant.service                                                    disabled        disabled
+xvnc@.service                                                             static          -
+system-cockpithttps.slice                                                 static          -
+system-systemd\x2dcryptsetup.slice                                        static          -
+user.slice                                                                static          -
+avahi-daemon.socket                                                       enabled         enabled
+cockpit-wsinstance-http.socket                                            static          -
+cockpit-wsinstance-https-factory.socket                                   static          -
+cockpit-wsinstance-https@.socket                                          static          -
+cockpit.socket                                                            disabled        disabled
+cups.socket                                                               enabled         enabled
+dbus.socket                                                               enabled         enabled
+dm-event.socket                                                           enabled         enabled
+ibacm.socket                                                              disabled        disabled
+iscsid.socket                                                             enabled         enabled
+iscsiuio.socket                                                           enabled         enabled
+lvm2-lvmpolld.socket                                                      enabled         enabled
+multipathd.socket                                                         enabled         disabled
+netavark-dhcp-proxy.socket                                                disabled        disabled
+nrpe.socket                                                               enabled         disabled
+podman.socket                                                             disabled        disabled
+rpcbind.socket                                                            enabled         enabled
+spice-vdagentd.socket                                                     static          -
+sshd.socket                                                               disabled        disabled
+sssd-autofs.socket                                                        disabled        disabled
+sssd-kcm.socket                                                           enabled         enabled
+sssd-nss.socket                                                           disabled        disabled
+sssd-pac.socket                                                           disabled        disabled
+sssd-pam-priv.socket                                                      disabled        disabled
+sssd-pam.socket                                                           disabled        disabled
+sssd-ssh.socket                                                           disabled        disabled
+sssd-sudo.socket                                                          disabled        disabled
+syslog.socket                                                             static          -
+systemd-coredump.socket                                                   static          -
+systemd-initctl.socket                                                    static          -
+systemd-journald-audit.socket                                             static          -
+systemd-journald-dev-log.socket                                           static          -
+systemd-journald-varlink@.socket                                          static          -
+systemd-journald.socket                                                   static          -
+systemd-journald@.socket                                                  static          -
+systemd-rfkill.socket                                                     static          -
+systemd-udevd-control.socket                                              static          -
+systemd-udevd-kernel.socket                                               static          -
+xvnc.socket                                                               disabled        disabled
+dev-disk-by\x2duuid-4ab3cd5e\x2d8923\x2d4043\x2d8044\x2dafb6f8835bd9.swap generated       -
+anaconda.target                                                           static          -
+basic.target                                                              static          -
+blockdev@.target                                                          static          -
+bluetooth.target                                                          static          -
+boot-complete.target                                                      static          -
+cryptsetup-pre.target                                                     static          -
+cryptsetup.target                                                         static          -
+ctrl-alt-del.target                                                       alias           -
+default.target                                                            alias           -
+emergency.target                                                          static          -
+exit.target                                                               disabled        disabled
+factory-reset.target                                                      static          -
+final.target                                                              static          -
+first-boot-complete.target                                                static          -
+getty-pre.target                                                          static          -
+getty.target                                                              static          -
+graphical.target                                                          static          -
+halt.target                                                               disabled        disabled
+hibernate.target                                                          static          -
+hybrid-sleep.target                                                       static          -
+initrd-fs.target                                                          static          -
+initrd-root-device.target                                                 static          -
+initrd-root-fs.target                                                     static          -
+initrd-switch-root.target                                                 static          -
+initrd-usr-fs.target                                                      static          -
+initrd.target                                                             static          -
+integritysetup-pre.target                                                 static          -
+integritysetup.target                                                     static          -
+iprutils.target                                                           disabled        disabled
+kexec.target                                                              disabled        disabled
+local-fs-pre.target                                                       static          -
+local-fs.target                                                           static          -
+multi-user.target                                                         indirect        disabled
+network-online.target                                                     static          -
+network-pre.target                                                        static          -
+network.target                                                            static          -
+nfs-client.target                                                         enabled         disabled
+nss-lookup.target                                                         static          -
+nss-user-lookup.target                                                    static          -
+nvmf-connect.target                                                       static          -
+paths.target                                                              static          -
+poweroff.target                                                           disabled        disabled
+printer.target                                                            static          -
+reboot.target                                                             enabled         enabled
+remote-cryptsetup.target                                                  disabled        enabled
+remote-fs-pre.target                                                      static          -
+remote-fs.target                                                          enabled         enabled
+remote-veritysetup.target                                                 disabled        disabled
+rescue.target                                                             static          -
+rpc_pipefs.target                                                         static          -
+rpcbind.target                                                            static          -
+runlevel0.target                                                          alias           -
+runlevel1.target                                                          alias           -
+runlevel2.target                                                          alias           -
+runlevel3.target                                                          alias           -
+runlevel4.target                                                          alias           -
+runlevel5.target                                                          alias           -
+runlevel6.target                                                          alias           -
+selinux-autorelabel.target                                                static          -
+shutdown.target                                                           static          -
+sigpwr.target                                                             static          -
+sleep.target                                                              static          -
+slices.target                                                             static          -
+smartcard.target                                                          static          -
+sockets.target                                                            static          -
+sound.target                                                              static          -
+sshd-keygen.target                                                        static          -
+suspend-then-hibernate.target                                             static          -
+suspend.target                                                            static          -
+swap.target                                                               static          -
+sysinit.target                                                            static          -
+system-update-pre.target                                                  static          -
+system-update.target                                                      static          -
+time-set.target                                                           static          -
+time-sync.target                                                          static          -
+timers.target                                                             static          -
+umount.target                                                             static          -
+usb-gadget.target                                                         static          -
+veritysetup-pre.target                                                    static          -
+veritysetup.target                                                        static          -
+dnf-makecache.timer                                                       enabled         enabled
+fstrim.timer                                                              disabled        disabled
+fwupd-refresh.timer                                                       disabled        disabled
+insights-client.timer                                                     disabled        disabled
+logrotate.timer                                                           enabled         enabled
+mdadm-last-resort@.timer                                                  static          -
+mdcheck_continue.timer                                                    disabled        disabled
+mdcheck_start.timer                                                       disabled        disabled
+mdmonitor-oneshot.timer                                                   disabled        disabled
+ntplogtemp.timer                                                          disabled        disabled
+ntpviz-daily.timer                                                        disabled        disabled
+ntpviz-weekly.timer                                                       disabled        disabled
+podman-auto-update.timer                                                  disabled        disabled
+raid-check.timer                                                          disabled        disabled
+rpm-ostree-countme.timer                                                  disabled        disabled
+rpm-ostreed-automatic.timer                                               disabled        disabled
+systemd-sysupdate-reboot.timer                                            disabled        disabled
+systemd-sysupdate.timer                                                   disabled        disabled
+systemd-tmpfiles-clean.timer                                              static          -
+
+500 unit files listed.
+------------------------------------------------------------
+13. Linux kernel boot-time arguments, from /proc/cmdline
+BOOT_IMAGE=(hd0,gpt2)/vmlinuz-5.14.0-427.26.1.el9_4.x86_64 root=/dev/mapper/sysvg-root ro pci=noaer mitigations=off crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=UUID=4ab3cd5e-8923-4043-8044-afb6f8835bd9 rd.lvm.lv=sysvg/root
+------------------------------------------------------------
+14. cpupower frequency-info
+analyzing CPU 10:
+  driver: intel_pstate
+  CPUs which run at the same hardware frequency: 10
+  CPUs which need to have their frequency coordinated by software: 10
+  maximum transition latency:  Cannot determine or is not supported.
+  hardware limits: 1.20 GHz - 3.70 GHz
+  available cpufreq governors: performance powersave
+  current policy: frequency should be within 1.20 GHz and 2.70 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency: Unable to call hardware
+  current CPU frequency: 2.70 GHz (asserted by call to kernel)
+  boost state support:
+    Supported: yes
+    Active: yes
+------------------------------------------------------------
+15. sysctl
+Requires SUDO permission
+------------------------------------------------------------
+16. /sys/kernel/mm/transparent_hugepage
+[always] madvise never
+------------------------------------------------------------
+17. /sys/kernel/mm/transparent_hugepage/khugepaged
+1
+------------------------------------------------------------
+18. OS release
+NAME="Red Hat Enterprise Linux"
+VERSION="9.4 (Plow)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="9.4"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="Red Hat Enterprise Linux 9.4 (Plow)"
+ANSI_COLOR="0;31"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:9::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 9"
+REDHAT_BUGZILLA_PRODUCT_VERSION=9.4
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="9.4"
+------------------------------------------------------------
+19. Disk information
+NAME              MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+nvme0n1           259:0    0  1.5T  0 disk 
+├─nvme0n1p1       259:1    0  256M  0 part /boot/efi
+├─nvme0n1p2       259:2    0  512M  0 part /boot
+├─nvme0n1p3       259:3    0  1.4T  0 part 
+│ ├─sysvg-root    253:0    0   50G  0 lvm  /
+│ ├─sysvg-scratch 253:1    0  1.3T  0 lvm  /scratch
+│ ├─sysvg-var     253:2    0   50G  0 lvm  /var
+│ └─sysvg-tmp     253:3    0   20G  0 lvm  /tmp
+└─nvme0n1p4       259:4    0    8G  0 part [SWAP]
+------------------------------------------------------------
+20. /sys/devices/virtual/dmi/id
+bios_date
+bios_release
+bios_vendor
+bios_version
+board_asset_tag
+board_name
+board_serial
+board_vendor
+board_version
+chassis_asset_tag
+chassis_serial
+chassis_type
+chassis_vendor
+chassis_version
+modalias
+power
+product_family
+product_name
+product_serial
+product_sku
+product_uuid
+product_version
+subsystem
+sys_vendor
+uevent
+------------------------------------------------------------
+21. dmidecode
+Requires SUDO permission
+------------------------------------------------------------
+22. BIOS
+Requires SUDO permission
+------------------------------------------------------------

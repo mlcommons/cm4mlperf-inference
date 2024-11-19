@@ -1,0 +1,66 @@
+/home/hice1/avivekanand3/CM/repos/local/cache/c88e5ba6fd9a4a86/inference/language/bert/pytorch_SUT.py:77: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model.load_state_dict(torch.load(model_file), strict=False)
+================================================
+MLPerf Results Summary
+================================================
+SUT name : PySUT
+Scenario : Offline
+Mode     : PerformanceOnly
+Samples per second: 4.46232
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+
+================================================
+Additional Stats
+================================================
+Min latency (ns)                : 263745846
+Max latency (ns)                : 2427663133742
+Mean latency (ns)               : 1209583184815
+50.00 percentile latency (ns)   : 1188512036470
+90.00 percentile latency (ns)   : 2197728044055
+95.00 percentile latency (ns)   : 2313192569106
+97.00 percentile latency (ns)   : 2358721230791
+99.00 percentile latency (ns)   : 2404572303471
+99.90 percentile latency (ns)   : 2425530302007
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 10833
+target_qps : 4.68051
+target_latency (ns): 0
+max_async_queries : 1
+min_duration (ms): 600000
+max_duration (ms): 0
+min_query_count : 1
+max_query_count : 0
+qsl_rng_seed : 3066443479025735752
+sample_index_rng_seed : 10688027786191513374
+schedule_rng_seed : 14962580496156340209
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 10833
+
+No warnings encountered during test.
+
+No errors encountered during test.
+Loading BERT configs...
+Loading PyTorch model...
+Constructing SUT...
+Finished constructing SUT.
+Constructing QSL...
+Loading cached features from 'eval_features.pickle'...
+Finished constructing QSL.
+Running LoadGen test...
+Done!
+Destroying SUT...
+Destroying QSL...
+Finished destroying SUT.
+Finished destroying QSL.
