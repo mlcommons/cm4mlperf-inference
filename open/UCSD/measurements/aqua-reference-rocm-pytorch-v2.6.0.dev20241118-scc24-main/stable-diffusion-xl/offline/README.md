@@ -33,7 +33,8 @@ cm run script \
 	--adr.mlperf-implementation.tags=_branch.multinode-test,_repo.https://github.com/zixianwang2022/mlperf-scc24 \
 	--adr.mlperf-implementation.version=custom \
 	--env.CM_GET_PLATFORM_DETAILS=no \
-	--target_qps=1.8
+	--target_qps=1.8 \
+	--rerun
 ```
 *Note that if you want to use the [latest automation recipes](https://docs.mlcommons.org/inference) for MLPerf (CM scripts),
  you should simply reload mlcommons@cm4mlops without checkout and clean CM cache as follows:*
@@ -52,8 +53,8 @@ Platform: aqua-reference-rocm-pytorch-v2.6.0.dev20241118-scc24-main
 Model Precision: fp32
 
 ### Accuracy Results 
-`CLIP_SCORE`: `15.22477`, Required accuracy for closed division `>= 31.68632` and `<= 31.81332`
-`FID_SCORE`: `84.24318`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
+`CLIP_SCORE`: `15.22522`, Required accuracy for closed division `>= 31.68632` and `<= 31.81332`
+`FID_SCORE`: `84.25505`, Required accuracy for closed division `>= 23.01086` and `<= 23.95008`
 
 ### Performance Results 
-`Samples per second`: `0.847525`
+`Samples per second`: `1.5779`

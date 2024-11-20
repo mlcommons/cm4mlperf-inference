@@ -4,7 +4,7 @@ MLPerf Results Summary
 SUT name : Multi-node SUT: N1, N2
 Scenario : Offline
 Mode     : PerformanceOnly
-Samples per second: 0.847525
+Samples per second: 1.5779
 Result is : VALID
   Min duration satisfied : Yes
   Min queries satisfied : Yes
@@ -13,15 +13,15 @@ Result is : VALID
 ================================================
 Additional Stats
 ================================================
-Min latency (ns)                : 359583940663
-Max latency (ns)                : 589953295927
-Mean latency (ns)               : 474768618295
-50.00 percentile latency (ns)   : 589953295927
-90.00 percentile latency (ns)   : 589953295927
-95.00 percentile latency (ns)   : 589953295927
-97.00 percentile latency (ns)   : 589953295927
-99.00 percentile latency (ns)   : 589953295927
-99.90 percentile latency (ns)   : 589953295927
+Min latency (ns)                : 315134013672
+Max latency (ns)                : 316876974527
+Mean latency (ns)               : 316005494099
+50.00 percentile latency (ns)   : 316876974527
+90.00 percentile latency (ns)   : 316876974527
+95.00 percentile latency (ns)   : 316876974527
+97.00 percentile latency (ns)   : 316876974527
+99.00 percentile latency (ns)   : 316876974527
+99.90 percentile latency (ns)   : 316876974527
 
 ================================================
 Test Parameters Used
